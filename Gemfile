@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby 'ruby 2.4.1'
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -54,3 +54,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'doorkeeper'
+gem 'rails_12factor', group: :production
